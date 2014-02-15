@@ -1,0 +1,14 @@
+<div class="container">
+  <a href="/">View all Categories</a>
+  <a href="/categories/<%= @category_id %>">View all Posting</a>
+  <h3>Create a Posting: </h3>
+
+  <form action='/categories/<%= @category_id %>/posts/new' method='post'>
+    <input type='text' placeholder='Title' name='title'>
+    <input type='number' placeholder='Price' name='price'>
+    <textarea rows='4' cols='50' name='description' placeholder='Description'></textarea>
+    <input type='text' placeholder='Location' name='location'>
+    <input type='email' placeholder='Email' name='email'>
+    <input type='submit' value='Create Post'>
+  </form>
+</div>
